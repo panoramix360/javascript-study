@@ -1,3 +1,6 @@
-const hashmaps = require('./hashmaps-sets')
+const maps = require('./maps')
+const queue = require('./queue')
 
-hashmaps()
+maps()
+console.log('************************************')
+queue()
