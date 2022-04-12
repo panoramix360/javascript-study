@@ -1,17 +1,18 @@
+const { uniqueNamesGenerator, adjectives, colors, animals } = require('unique-names-generator')
 
 function enqueue(queue, value) {
     return [
-        ...queue,
-        value
+        value,
+        ...queue
     ]
 }
 
 function dequeue(queue) {
-    return queue.shift()
+    return queue.pop()
 }
 
 function peek(queue) {
-    return queue[0]
+    return queue[queue.length - 1]
 }
 
 function headAndTail(queue) {
@@ -21,8 +22,8 @@ function headAndTail(queue) {
 module.exports = function main() {
     let queue = []
 
-    Array(10).fill(0).forEach((_, i) => {
-        queue = enqueue(queue, i + 1)
+    Array(10).fill(0).forEach(() => {
+        queue = enqueue(queue, uniqueNamesGenerator({ dictionaries: [adjectives, colors, animals] }))
     })
 
     console.log("====== Queue ======")
