@@ -114,12 +114,12 @@ function findWord(word, crossword) {
 }
 
 
-const found = findWord('COOL', [
+const found = findWord('BOBAR', [
     ['A',  'U',  'I',  'K',  'F',  'W', 'N'],
-    ['W',  'Q',  'B',  'O',  'L',  'X', 'P'],
-    ['T',  'L',  'A',  'E',  'R',  'E', 'S'],
-    ['Y',  'Z',  'X',  'E',  'R',  'L', 'W'],
-    ['T',  'S',  'L',  'O',  'O',  'C', 'A'],
+    ['B',  'Q',  'B',  'O',  'L',  'X', 'P'],
+    ['T',  'O',  'A',  'E',  'R',  'E', 'S'],
+    ['Y',  'Z',  'B',  'E',  'R',  'L', 'W'],
+    ['T',  'S',  'L',  'A',  'O',  'C', 'A'],
     ['L',  'H',  'Z',  'Q',  'R',  'L', 'W'],
     ['K',  'J',  'N',  'E',  'F',  'X', 'Z']
 ]);
